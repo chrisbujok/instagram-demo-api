@@ -1,0 +1,9 @@
+-   [ ] Unify data schema (OSDS vs Instagram "API") - e.g. whether to user first_name and last_name or full_name
+-   [ ] OSDS seems to be not that useful though, probably it's worth to work on our own schema definition
+-   [ ] TESTS!!!
+-   [ ] Improve Swagger documentation
+-   [ ] Add unique constraint to Users
+-   [ ] Consider GraphQL API instead (or next to) REST
+-   [ ] Cache imported Instagram images (to avoid expired links)
+-   [ ] Support all media types next to photos: videos and carousels (requires more advanced structure)
+-   [ ] Probably use Node.js out of Docker - improve performance and Developer Experience

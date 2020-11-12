@@ -1,0 +1,30 @@
+version: '2.4'
+services:
+  neo4j:
+    image: neo4j
+    environment:
+      NEO4J_AUTH: none
+    ports:
+      - 7474:7474
+      - 7687:7687
+    networks:
+      como-net:
+    volumes:
+      - $HOME/neo4j/data:/data
+      - .:/app
+  api:
+    image: node:15-alpine
+    working_dir: /usr/app
+    command: sh -c "npm run start:dev"
+    networks:
+      como-net:
+    ports:
+      - 3000:3000
+      - 9229:9229
+    volumes:
+      - .:/usr/app/
+    depends_on:
+      - neo4j
+
+networks:
+  como-net:
