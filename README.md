@@ -28,3 +28,7 @@ npm run import-data
 
 This is WIP, but there's a `import/import.js` script. It uses [instagram-private-api](https://github.com/dilame/instagram-private-api) package.
 The output of that script is `createUsers.cypher` file which is being used by the `import-data` npm script.
+
+## Current status
+
+This POC is incomplete. Please refer to [the TODO file](TODO.md) for futher reference.
